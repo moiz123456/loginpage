@@ -1,9 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>login page</title>
-</title>
-<body>
-<h1>hellow world</h1>
+
+<style>
+body{font-family:Arial,Helvetica,Sans-serif;}
+form{border:3px solid #f1f1f1}
+input[type=text],input[type=password]
+{
+width:50%;
+padding:12px 20px;
+margin: 10px;
+display:inline-block;
+border:none;
+box-sizing:border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 100px;
+  margin: 10px 0 ;
+  border: none;
+  cursor: pointer;
+  width: 50% ;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbt {
+  width :auto;
+  padding: 10px 48px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 20px 0 22px 0 ;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<title> link</title>
+
+
+
+
+
+
+<h2>login page</h2>
+<form action="/action_page.php">
+<div class="imgcontainer">
+<img src="avatar.png" alt="Avatar" class="avatar">
+</div>
+<div class="container">
+<label for="uname"><b>username</b></label>
+<input type="text" name="uname" placeholder="enter a name" required>
+<br>
+<label for="psw"><b>password</b></label>
+<input type="password" name="password" placeholder="password " required>
+<br>
+<button type="submit"> login     </button>
+<br>
+<label> <input type="checkbox" checked="checked" name="remember">remember me</label>
+
+</div>
+<div class="container">
+
+<button type="button" class="cancelbt">cancel</button>
+</div>
+
+
+</form>
 </body>
+
+
 </html>
